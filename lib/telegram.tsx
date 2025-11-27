@@ -1,4 +1,4 @@
-/**
+p/**
  * TELEGRAM NOTIFICATION CONFIGURATION
  *
  * This service sends real-time notifications to your Telegram chat when users:
@@ -86,7 +86,7 @@ export async function sendTelegramNotification(activity: UserActivity) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        chat_id: chatId, // Where to send the message (5944848954)
+        chat_id: chatId, // Where to send the message (your chat ID)
         text: message, // The formatted notification message
         parse_mode: "HTML", // Enables bold text and formatting
       }),
